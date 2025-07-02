@@ -23,7 +23,7 @@ document.getElementById("stopBtn").addEventListener("click", () => {
 
 // This will be injected into the page
 function fillGoogleSearch(query) {
-  const input = document.querySelector("input[name='q']");
+  const input = document.querySelector("textarea");
   if (input) {
     input.value = query;
     input.dispatchEvent(new Event("input", { bubbles: true }));
