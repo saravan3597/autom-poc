@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Autom Script Runner",
+  "version": "1.0",
+  "description": "Run scripts",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["scripting", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
